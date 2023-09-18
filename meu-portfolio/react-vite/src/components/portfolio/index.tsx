@@ -27,22 +27,22 @@ export function Header(){
 export function Main(){
     return (
         <main>
-            <section className='container' id='sobre'>   
+            <section className='container' id='sobre' data-aos="fade-right">   
                  <div>             
                      <h1 className='container__h1'>Olá, eu sou o <strong>Willian Santana</strong></h1>
                      <div className='container_buttom'>
                         <a className='buttom__download' href="/src/components/pdf/curriculo.pdf" attributes-list download>Download CV</a>
-                         <a className='buttom__cv' href="https://wa.me/5516993402404" target="_blank">Entrar em Contato</a>
+                         <a className='buttom__cv' href="https://wa.me/5516993402404" target="_blank">WhatsApp</a>
                      </div>
                  </div>
                  <div>
                      <img className='img' src="/src/assets/img/imagem_pessoal.jpg" alt="Imagem Pessoal" />
                  </div>                               
              </section>    
-             <section className='sobre__container'>
+             <section className='sobre__container' data-aos="fade-left">
                  <h1>Sobre mim</h1>           
              </section>  
-             <section className='texto__sobre__container'>
+             <section className='texto__sobre__container' data-aos="fade-left">
                  <p>Desenvolvedor FullStack com experiência em React.js, Next.js, Redux, JavaScript, TypeScript, NodeJs, Progress, Angular, Laravel, Mysql, Styled Components, Material UI e consumo de APIs REST. Apaixonado pelo desenvolvimento de Software. Também possui experiência em projetos gerenciados por Metodologias Ágeis. Formado em Análise e Desenvolvimento de sistemas e cursando Especialização na Alura.</p>             
              </section>  
              <Habilidades/>    
@@ -56,8 +56,8 @@ function Habilidades(){
     return (
         <section className='habilidades'>
                 <div className="habilidades__container">
-                    <h1 id='habilidades'>Habilidades</h1>
-                    <div className="habilidades__cards">
+                    <h1 data-aos="fade-right" id='habilidades'>Habilidades</h1>
+                    <div className="habilidades__cards" data-aos="fade-right">
                         <div className="box" key="0">
                             <p>HTML5</p>
                             <img className='img__html' src="/src/assets/img/html.png" alt="" />
@@ -127,13 +127,13 @@ function Habilidades(){
 function Projetos(){
     return (
         <section className='projetos'>
-            <div className='projetos__h1__projetos'>
+            <div className='projetos__h1__projetos' data-aos="fade-left">
                 <h1 id='projetos'>Projetos</h1>
             </div>
-            <div className='projetos__h1__destaques'>
+            <div className='projetos__h1__destaques' data-aos="fade-left">
                 <h1>Destaques . . .</h1>
             </div>
-            <div className='projetos__destaques'>
+            <div className='projetos__destaques' data-aos="fade-left">
                 <div className='projetos__destaques__box'>
                     <img src="/src/assets/img/projeto1.jpg" alt="" />
                 </div>
@@ -144,10 +144,10 @@ function Projetos(){
                     <img src="/src/assets/img/projeto3.jpg" alt="" />
                 </div>
             </div>
-            <div className='todos__projetos__h1'>
+            <div className='todos__projetos__h1' data-aos="fade-right">
                 <h1>Todos os Projetos . . .</h1>
             </div>
-            <div className='todos__projetos'>
+            <div className='todos__projetos' data-aos="fade-right">
                 <div className='todos__projetos__box'>
                     <img src="/src/assets/img/projeto3.jpg" alt="" />
                 </div>
@@ -188,48 +188,36 @@ function Contato(){
             </div>
             <div className='contato__container'>
                 <div className='contato__conteudo'>
-                    <a href="www.linkedin.com/in/willian-santana1995">
+                    <a href="https://github.com/Williandevweb/">
                         <img src="/src/assets/img/github.svg" alt="" />   
                     </a> 
-                    <a href="www.linkedin.com/in/willian-santana1995">
+                    <a href="https://github.com/Williandevweb/">
                         <h2>GitHub</h2>
-                    </a>   
-                    <a href="www.linkedin.com/in/willian-santana1995">
-                        <p>@rhGitHub</p>
-                    </a>                               
+                    </a>                                 
                 </div>
                 <div className='contato__conteudo'>
-                    <a href="www.linkedin.com/in/willian-santana1995">
+                    <a href="https://wa.me/5516993402404">
                         <img src="/src/assets/img/phone.svg" alt="" />   
                     </a> 
-                    <a href="www.linkedin.com/in/willian-santana1995">
+                    <a href="https://wa.me/5516993402404">
                         <h2>Contato</h2>
-                    </a>   
-                    <a href="www.linkedin.com/in/willian-santana1995">
-                        <p>55 1699340-2404</p>
-                    </a>                               
+                    </a>                                  
                 </div>
                 <div className='contato__conteudo'>
-                    <a href="www.linkedin.com/in/willian-santana1995">
+                    <a href="https://www.linkedin.com/in/willian-santana-programador/">
                         <img src="/src/assets/img/linkedin.svg" alt="" />   
                     </a> 
-                    <a href="www.linkedin.com/in/willian-santana1995">
+                    <a href="https://www.linkedin.com/in/willian-santana-programador/">
                         <h2>Linkedin</h2>
-                    </a>   
-                    <a href="www.linkedin.com/in/willian-santana1995">
-                        <p>@rhLinkedin</p>
-                    </a>                               
+                    </a>                                  
                 </div>
                 <div className='contato__conteudo'>
-                    <a href="www.linkedin.com/in/willian-santana1995">
+                    <a href="mailto:willianleonardorv@gmail.com">
                         <img src="/src/assets/img/mail.svg" alt="" />   
                     </a> 
-                    <a href="www.linkedin.com/in/willian-santana1995">
+                    <a href="mailto:willianleonardorv@gmail.com">
                         <h2>E-mail</h2>
-                    </a>   
-                    <a href="www.linkedin.com/in/willian-santana1995">
-                        <p>Willian.santana@hotmail.com</p>
-                    </a>                               
+                    </a>                                 
                 </div>
             </div>
         </section>
@@ -242,9 +230,11 @@ function AlteraCor(){
 
     if(elemento.checked == true){
         document.body.style.setProperty('--cor-primaria', 'white');
-        document.body.style.setProperty('--cor-secundaria', '#111125');       
+        document.body.style.setProperty('--cor-secundaria', '#111125');
+        document.body.style.setProperty('--cor-terciaria', '#111125');              
     }else {
         document.body.style.setProperty('--cor-primaria', '#111125');
         document.body.style.setProperty('--cor-secundaria', 'white');
+        document.body.style.setProperty('--cor-terciaria', 'rgb(177, 166, 166)');
     }
 }
